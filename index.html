@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Website Saya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Keren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 80px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: white;
+            color: #2a5298;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffcc00;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 80px 20px;
+            background: white;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            padding: 30px;
+            background: #111;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
-    <h1>Halo Dunia!</h1>
-    <p>Website ini dibuat dari GitHub.</p>
+
+<header>
+    <h1>🔥 Selamat Datang 🔥</h1>
+    <p>Website modern, elegan, dan profesional dari GitHub</p>
+    <button class="btn">Mulai Sekarang</button>
+</header>
+
+<section>
+    <h2>✨ Layanan Kami</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>🚀 Cepat</h3>
+            <p>Website super cepat dan ringan.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Modern</h3>
+            <p>Desain elegan dan kekinian.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Aman</h3>
+            <p>Hosting gratis dan aman dari GitHub.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Website Saya | Dibuat dengan ❤️</p>
+</footer>
+
 </body>
 </html>
